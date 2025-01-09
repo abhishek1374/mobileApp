@@ -25,6 +25,80 @@ let details: ShoeData[] = [
         discount: '₹493.00',
         item_name: 'Nike Air Zoom Pegasus 37',
     },
+    {
+        id: 1,
+        name: 'Nike Air Zoom Pegasus 37',
+        price: '₹2,193.00',
+        image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D',
+        discount: '₹493.00',
+        item_name: 'Nike Air Zoom Pegasus 37',
+    },
+
+    {
+        id: 2,
+        name: 'Nike jordan',
+        price: '₹2,193.00',
+        image: require('../../assets/images/extra/home/shoes.png'),
+        discount: '₹493.00',
+        item_name: 'Nike Air Zoom Pegasus 37',
+    },{
+        id: 1,
+        name: 'Nike Air Zoom Pegasus 37',
+        price: '₹2,193.00',
+        image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D',
+        discount: '₹493.00',
+        item_name: 'Nike Air Zoom Pegasus 37',
+    },
+
+    {
+        id: 2,
+        name: 'Nike jordan',
+        price: '₹2,193.00',
+        image: require('../../assets/images/extra/home/shoes.png'),
+        discount: '₹493.00',
+        item_name: 'Nike Air Zoom Pegasus 37',
+    },{
+        id: 1,
+        name: 'Nike Air Zoom Pegasus 37',
+        price: '₹2,193.00',
+        image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D',
+        discount: '₹493.00',
+        item_name: 'Nike Air Zoom Pegasus 37',
+    },
+
+    {
+        id: 2,
+        name: 'Nike jordan',
+        price: '₹2,193.00',
+        image: require('../../assets/images/extra/home/shoes.png'),
+        discount: '₹493.00',
+        item_name: 'Nike Air Zoom Pegasus 37',
+    },{
+        id: 1,
+        name: 'Nike Air Zoom Pegasus 37',
+        price: '₹2,193.00',
+        image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D',
+        discount: '₹493.00',
+        item_name: 'Nike Air Zoom Pegasus 37',
+    },
+
+    {
+        id: 2,
+        name: 'Nike jordan',
+        price: '₹2,193.00',
+        image: require('../../assets/images/extra/home/shoes.png'),
+        discount: '₹493.00',
+        item_name: 'Nike Air Zoom Pegasus 37',
+    },{
+        id: 1,
+        name: 'Nike Air Zoom Pegasus 37',
+        price: '₹2,193.00',
+        image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D',
+        discount: '₹493.00',
+        item_name: 'Nike Air Zoom Pegasus 37',
+    },
+
+   
 ];
 
 export default function SecondHome() {
@@ -67,7 +141,7 @@ export default function SecondHome() {
         <View style={styles.main}>
             <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={{ width: width, padding: 15, backgroundColor: 'green' }}>
-                    <View style={{ flexDirection: 'row',position:'absolute',top: height*0.02,right: width*0.03 }}>
+                    {/* <View style={{ flexDirection: 'row',position:'absolute',top: height*0.02,right: width*0.03 }}>
                         <TouchableOpacity  onPress={() =>  { navigation.navigate('ProfilePage')}}>
                             <Image
                                 source={require('../../assets/images/extra/home/ppp.png')}
@@ -80,7 +154,7 @@ export default function SecondHome() {
                                 style={{ width: width*0.1, height: height*0.08, tintColor: '#d9d9d9', marginLeft: width*0.1 }}
                             />
                         </TouchableOpacity>
-                    </View>
+                    </View> */}
                     <Text style={styles.title}>Hey</Text>
                     <Text style={styles.title}>{email}</Text>
                 </View>

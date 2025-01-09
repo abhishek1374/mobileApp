@@ -16,6 +16,22 @@ export default function HomeScreen() {
   } else {
     setErrorModalVisible(true); // Show error modal
   }
+  // const handleLogin = () => {
+  //   const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  
+  //   if (email && password) {
+  //     if (!emailRegex.test(email)) {
+  //       console.log("Invalid email format");
+  //       setErrorModalVisible(true); // Show error modal for invalid email
+  //     } else if (password.length < 6) {
+  //       console.log("Password must be at least 6 characters");
+  //       setErrorModalVisible(true); // Show error modal for short password
+  //     } else {
+  //       console.log("Button pressed");
+  //       setModalVisible(true);  // Show the custom modal (success)
+  //     }
+  //   }
+  
 };
 
 const [modalVisible, setModalVisible] = useState(false);
@@ -38,8 +54,8 @@ const [errorModalVisible, setErrorModalVisible] = useState(false);
           <Image source={require('../../assets/images/extra/login/user.png')} style={styles.icon} />
           <TextInput
             style={styles.input}
-            placeholder="Email / Username"
-            placeholderTextColor="#ccc"
+            placeholder="Email"
+            placeholderTextColor="grey"
             keyboardType="email-address"
             autoCapitalize="none"
             onChangeText={setEmail}
@@ -53,7 +69,7 @@ const [errorModalVisible, setErrorModalVisible] = useState(false);
           <TextInput
             style={styles.input}
             placeholder="Password"
-            placeholderTextColor="#ccc"
+            placeholderTextColor="grey"
             secureTextEntry={!isPasswordVisible}
             onChangeText={setPassword}
             value={password}
@@ -106,7 +122,7 @@ const [errorModalVisible, setErrorModalVisible] = useState(false);
       <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
         <View style={{ backgroundColor: 'white', padding: 20 }}>
           <Text>Error</Text>
-          <Text>Please fill in all fields.</Text>
+          <Text>Please fill in all fields correctly.</Text>
           <Button title="OK" onPress={() => setErrorModalVisible(false)} />
         </View>
       </View>
