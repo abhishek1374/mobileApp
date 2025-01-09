@@ -101,8 +101,8 @@ const [errorModalVisible, setErrorModalVisible] = useState(false);
           <Button
             title="OK"
             onPress={() => {
-              // navigation.navigate('Home', { email });
-              navigation.navigate('SecondHome', { email });
+              navigation.navigate('Home', { email });
+              // navigation.navigate('SecondHome', { email });
 
 
 

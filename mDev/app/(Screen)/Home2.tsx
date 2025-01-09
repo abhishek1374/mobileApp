@@ -159,8 +159,6 @@ export default function SecondHome() {
                     <Text style={styles.title}>{email}</Text>
                 </View>
 
-                <View style={{ width: '100%', height: 1, backgroundColor: '#000' }} />
-
                 <FlatList
                     data={details}
                     numColumns={2}
